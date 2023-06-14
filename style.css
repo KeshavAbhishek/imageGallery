@@ -31,20 +31,21 @@ h1{
 
 #imageGallery{
     width: 90%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: max-content;
     margin-top: 20px;
     margin-bottom: 50px;
 }
 
-img{
-    width: 100%;
-    /* height: 413.168px; */
-    aspect-ratio: calc(4/3);
-}
+
 
 .downloadLogo{
     width: 100%;

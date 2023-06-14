@@ -21,7 +21,7 @@ async function fetchPhoto(pageNum){
 
         for (const result of results) {
             var timecurrent = new Date().getTime();
-            document.getElementById("imageGallery").innerHTML+=`<div class="imageFrame"><img src="${result.urls.small}"><div class="downloadLogo"><a href="${result.urls.raw.split("&")[0].split("?")[0]}" download="${timecurrent}.jpg"><i class="fa-solid fa-download"></i></a></div></div>`;
+            document.getElementById("imageGallery").innerHTML+=`<div class="imageFrame"><img src="${result.urls.small}"><div class="downloadLogo"><a href="${result.urls.raw.split("&")[0].split("?")[0]} target="_blank" download="${timecurrent}.jpg"><i class="fa-solid fa-download"></i></a></div></div>`;
         }
 
         var imageFrameData = document.getElementsByClassName("imageFrame");
@@ -53,11 +53,8 @@ function loadMore(){
     fetchPhoto(currentPage);
 }
 
-document.getElementsByTagName("body")[0].addEventListener("change",()=>{
-    if(document.getElementsByTagName("body")[0].clientWidth<=700){
-        document.getElementById("imageGallery").style.gridTemplateColumns="1fr";
+document.getElementById("query").addEventListener("keypress",(e)=>{
+    if(e.keyCode==13){
+        run();
     }
-    else{
-        document.getElementById("imageGallery").style.gridTemplateColumns="1fr 1fr 1fr";
-    };
 });
