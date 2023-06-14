@@ -21,7 +21,7 @@ async function fetchPhoto(pageNum){
 
         for (const result of results) {
             var timecurrent = new Date().getTime();
-            document.getElementById("imageGallery").innerHTML+=`<div class="imageFrame"><img src="${result.urls.small}"><div class="downloadLogo"><a href="${result.urls.raw.split("&")[0].split("?")[0]} target="_blank" download="${timecurrent}.jpg"><i class="fa-solid fa-download"></i></a></div></div>`;
+            document.getElementById("imageGallery").innerHTML+=`<div class="imageFrame"><img src="${result.urls.small}"><div class="downloadLogo"><a href="${result.urls.raw.split("&")[0].split("?")[0]}" target="_blank" download="${timecurrent}.jpg"><i class="fa-solid fa-download"></i></a></div></div>`;
         }
 
         var imageFrameData = document.getElementsByClassName("imageFrame");
