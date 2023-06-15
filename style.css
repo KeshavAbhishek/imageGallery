@@ -130,6 +130,47 @@ i{
     color: white;
 }
 
+#orientation{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+i{
+    color: green;
+    font-size: 2.15rem;
+}
+
+.orien{
+    /* background: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#pt{
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 10px;
+    aspect-ratio: calc(3/4);
+}
+
+#ls{
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 10px;
+    aspect-ratio: calc(2);
+}
+
+#sq{
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 10px;
+    aspect-ratio: calc(1);
+}
 
 @media only screen and (max-width: 700px) {
     h1{
@@ -146,5 +187,9 @@ i{
     #btn{
         width: 35%;
         font-size: 1.8rem;
+    }
+
+    .orien{
+        transform: scale(0.7);
     }
 }
