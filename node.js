@@ -92,7 +92,7 @@ document.getElementById("query").addEventListener("keypress",(e)=>{
 
 
 orien[0].addEventListener("click",()=>{
-    orien[0].innerHTML='<i class="fa-solid fa-circle-check clrh=green"></i>';
+    orien[0].innerHTML='<i class="fa-solid fa-circle-check clrgreen"></i>';
     orien[1].innerHTML="";
     orien[2].innerHTML="";
 
@@ -104,7 +104,7 @@ orien[0].addEventListener("click",()=>{
 });
 orien[1].addEventListener("click",()=>{
     orien[0].innerHTML="";
-    orien[1].innerHTML='<i class="fa-solid fa-circle-check clrh=green"></i>';
+    orien[1].innerHTML='<i class="fa-solid fa-circle-check clrgreen"></i>';
     orien[2].innerHTML="";
 
     orien[0].style.background="";
@@ -116,7 +116,7 @@ orien[1].addEventListener("click",()=>{
 orien[2].addEventListener("click",()=>{
     orien[0].innerHTML="";
     orien[1].innerHTML="";
-    orien[2].innerHTML='<i class="fa-solid fa-circle-check clrh=green"></i>';
+    orien[2].innerHTML='<i class="fa-solid fa-circle-check clrgreen"></i>';
 
     orien[0].style.background="";
     orien[1].style.background="";
