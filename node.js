@@ -6,7 +6,6 @@ async function fetchPhoto(pageNum){
     if(document.getElementById("query").value!=""){
         if(currentPage===1){
             document.getElementById("imageGallery").innerHTML = "";
-            currentPage = 1;
             document.getElementById("loadMore").style.visibility="hidden";
         }
 
@@ -44,8 +43,23 @@ async function fetchPhoto(pageNum){
     }
 }
 
+function reset(){
+    document.getElementById("btn").style.color="white";
+    document.getElementById("btn").style.background="#d06320";
+    document.getElementById("btn").innerHTML="Search";
+    document.getElementById("query").disabled=false;
+    document.getElementById("query").value="";
+    document.getElementById("btn").setAttribute("onclick","run()");
+    currentPage = 1;
+}
+
 function run(){
     fetchPhoto(currentPage);
+    document.getElementById("btn").style.color="red";
+    document.getElementById("btn").style.background="#fff";
+    document.getElementById("btn").innerHTML="Reset";
+    document.getElementById("query").disabled=true;
+    document.getElementById("btn").setAttribute("onclick","reset()");
 }
 
 function loadMore(){
