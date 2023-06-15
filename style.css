@@ -60,7 +60,7 @@ h1{
     visibility: hidden;
 }
 
-.clrwhite{
+i{
     color: white;
     font-size: 3.2rem;
 }
@@ -137,8 +137,8 @@ h1{
     justify-content: space-evenly;
 }
 
-i{
-    color: green;
+.clrgreen{
+    color: green !important;
     font-size: 2.15rem;
 }
 

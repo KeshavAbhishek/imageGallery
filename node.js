@@ -24,7 +24,7 @@ async function fetchPhoto(pageNum){
 
         for (const result of results) {
             var timecurrent = new Date().getTime();
-            document.getElementById("imageGallery").innerHTML+=`<div class="imageFrame"><img src="${result.urls.small}"><div class="downloadLogo"><a href="${result.urls.raw.split("&")[0].split("?")[0]}" target="_blank" download="${timecurrent}.jpg"><i class="fa-solid fa-download clrwhite"></i></a></div></div>`;
+            document.getElementById("imageGallery").innerHTML+=`<div class="imageFrame"><img src="${result.urls.small}"><div class="downloadLogo"><a href="${result.urls.raw.split("&")[0].split("?")[0]}" target="_blank" download="${timecurrent}.jpg"><i class="fa-solid fa-download"></i></a></div></div>`;
         }
 
         var imageFrameData = document.getElementsByClassName("imageFrame");
@@ -92,7 +92,7 @@ document.getElementById("query").addEventListener("keypress",(e)=>{
 
 
 orien[0].addEventListener("click",()=>{
-    orien[0].innerHTML='<i class="fa-solid fa-circle-check"></i>';
+    orien[0].innerHTML='<i class="fa-solid fa-circle-check clrwhite"></i>';
     orien[1].innerHTML="";
     orien[2].innerHTML="";
 
@@ -104,7 +104,7 @@ orien[0].addEventListener("click",()=>{
 });
 orien[1].addEventListener("click",()=>{
     orien[0].innerHTML="";
-    orien[1].innerHTML='<i class="fa-solid fa-circle-check"></i>';
+    orien[1].innerHTML='<i class="fa-solid fa-circle-check clrwhite"></i>';
     orien[2].innerHTML="";
 
     orien[0].style.background="";
@@ -116,7 +116,7 @@ orien[1].addEventListener("click",()=>{
 orien[2].addEventListener("click",()=>{
     orien[0].innerHTML="";
     orien[1].innerHTML="";
-    orien[2].innerHTML='<i class="fa-solid fa-circle-check"></i>';
+    orien[2].innerHTML='<i class="fa-solid fa-circle-check clrwhite"></i>';
 
     orien[0].style.background="";
     orien[1].style.background="";
