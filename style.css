@@ -27,6 +27,8 @@ h1{
     color: white;
     /* font-family: 'Edu NSW ACT Foundation', cursive; */
     font-family: 'Kablammo', cursive;
+    text-decoration: underline 10px dotted;
+    text-underline-offset: 25px;
 }
 
 #imageGallery{
@@ -177,6 +179,7 @@ i{
         font-size: 2.5rem;
         margin-top: 15px;
         font-weight: 800;
+        text-underline-offset: 18px;
     }
 
     #query{
@@ -191,5 +194,9 @@ i{
 
     .orien{
         transform: scale(0.7);
+    }
+
+    img{
+        transform: scale(0.85);
     }
 }
