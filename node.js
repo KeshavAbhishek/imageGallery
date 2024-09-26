@@ -1,4 +1,4 @@
-var reply = "AJM__f9e71HyCXiu6V1Vy_1oogiOLMlVWOxlGgLtoQ0";
+var reply = "eLZ0AVJvbzD21MnfajLlR2FmUj_1f3YalRhnR77POvw";
 
 var currentPage = 1;
 var orient = "";
@@ -70,11 +70,13 @@ function reset(){
 
 function run(){
     fetchPhoto(currentPage);
-    document.getElementById("btn").style.color="red";
-    document.getElementById("btn").style.background="#fff";
-    document.getElementById("btn").innerHTML="Reset";
-    document.getElementById("query").disabled=true;
-    document.getElementById("btn").setAttribute("onclick","reset()");
+    if(orient!=""){
+        document.getElementById("btn").style.color="red";
+        document.getElementById("btn").style.background="#fff";
+        document.getElementById("btn").innerHTML="Reset";
+        document.getElementById("query").disabled=true;
+        document.getElementById("btn").setAttribute("onclick","reset()");
+    }
 }
 
 function loadMore(){
