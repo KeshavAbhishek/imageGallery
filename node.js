@@ -1,4 +1,3 @@
-// HELLO
 var reply = "eLZ0AVJvbzD21MnfajLlR2FmUj_1f3YalRhnR77POvw";
 
 var currentPage = 1;
